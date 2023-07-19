@@ -281,26 +281,25 @@ div {
 
 }
 
-box section start */
-.all-box{
-display: grid;
-grid-template-columns: repeat(5,1fr) (4,1fr)  ;
-justify-content: space-around;
-align-content: center;
+box section start */ .all-box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) (4, 1fr);
+    justify-content: space-around;
+    align-content: center;
 
 }
 
 
 
- .left-side-box {
+.left-side-box {
 
 
     display: flex;
     justify-content: space-around;
     gap: 5px;
     padding: 20px;
-   
-} 
+    cursor: pointer;
+}
 
 #box1 {
     width: 243px;
@@ -322,7 +321,7 @@ align-content: center;
     width: 248px;
     height: 80px;
     flex-shrink: 0;
-    
+
     font-size: 16px;
     border: 1px solid #F948B2;
     border-radius: 50px;
@@ -455,25 +454,64 @@ align-content: center;
     display: flex;
     justify-content: space-around;
     gap: 5px;
-    padding:20px;
-  
+    padding: 20px;
+    cursor: pointer;
 }
- /* box end */
-.footer{
-    display: flex;
-  justify-content: center;
-  height:100vh ;
- max-width: 1400px;
- background-color: #0B0223;
- margin-top:126px ;
-}
-.footer img{
-    width: 86.041px;
-    height: 40px;
-    flex-shrink: 0;
+
+/* box end */
+.footer {
+    /* display: flex; */
+    text-align: center;
     align-items: center;
-    
+    height: 100vh;
+    max-width: 1400px;
+    margin: 10px auto;
+    background-color: #0B0223;
+    padding-top: 50px;
+
 }
+
+.footer-img,
+.list-iten>ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.list-iten li {
+    list-style: none;
+    margin-left: 30px;
+    font-size: 16px;
+    padding: 20px;
+
+}
+
+.list-iten a {
+    text-decoration: none;
+
+}
+
+.icon a {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #FFF;
+
+}
+
+.gamer-tax {
+
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 700;
+
+
+}
+
+   
+   
+
 
 
 
@@ -494,11 +532,16 @@ align-content: center;
     }
 
     .card-titel {
-        flex-direction: column;
+        flex-direction: column;}
 
+        .icon a {
+            font-size: 30px;
+            margin-left:10px;
+            color: #161515;
 
+        }
 
-    }
+    
 
 
     .nav-items-container a {
@@ -522,12 +565,12 @@ align-content: center;
         flex-direction: column;
         margin: 10px;
     }
-    
+
     .card-aria {
         flex-direction: column;
         padding: 20px;
-       
-        
+
+
 
     }
 
@@ -535,22 +578,33 @@ align-content: center;
         margin: 10px auto;
 
     }
-   
-  
-    .left-side-box{
-     /* display: grid;
+
+
+    .left-side-box {
+        /* display: grid;
      grid-template-columns:repeat(3,1fr) ; */
-     flex-direction: column;
+        flex-direction: column;
 
     }
-    .right-side-box{
+
+    .right-side-box {
         /* display: grid;
         grid-template-columns:repeat(3,1fr) ; */
         flex-direction: column;
 
     }
 
+    .footer-img,
+    .list-iten>ul {
+        flex-direction: column;
+        margin-left: 10px;
+    }
 
+    .footer{
+     padding:10px ;
+
+    }
+        /*footer end */
 }
 
 /* tablet */
@@ -596,10 +650,33 @@ align-content: center;
     }
 
     .game-img {
-        margin-left: 100px;
-        padding: 40px;
+        /* margin-left: 100px; */
+        padding: 20px;
+
+    }
+    .left-side-box,.right-side-box{
+     flex-direction: column;
+     padding: 15px;
+       justify-content: center;
 
     }
 
 
+    .footer-img,
+    .list-iten>ul {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+    .footer{
+     padding:10px ;
+
+    }
+
+    .icon a {
+        font-size: 30px;
+        margin-left:10px;
+        color: #161515;
+
+    }
 }
