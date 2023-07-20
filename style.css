@@ -281,11 +281,14 @@ div {
 
 }
 
-box section start */ .all-box {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr) (4, 1fr);
-    justify-content: space-around;
-    align-content: center;
+/* box section start */ 
+
+
+.box {
+display: flex;
+justify-content: center;
+align-items: center;
+gap:25px
 
 }
 
@@ -301,12 +304,21 @@ box section start */ .all-box {
     cursor: pointer;
 }
 
+
+
+
+
+
+
 #box1 {
     width: 243px;
     height: 80px;
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    border-radius: 30px;
+   box-shadow:2px 2px 2px 2px #f8eeee ; 
+
 }
 
 #box2 {
@@ -315,6 +327,8 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
 }
 
 #box3 {
@@ -337,7 +351,8 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
-
+    border-radius: 30px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
 }
 
 #box5 {
@@ -346,6 +361,8 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
 
 }
 
@@ -355,6 +372,9 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
+
 }
 
 #box7 {
@@ -363,6 +383,9 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
+
 }
 
 #box8 {
@@ -371,6 +394,9 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
+
 }
 
 #box9 {
@@ -380,12 +406,15 @@ box section start */ .all-box {
     flex-shrink: 0;
     color: #0B0223;
     font-size: 16px;
+    box-shadow:2px 2px 2px 2px #f8eeee ;
+    border-radius: 30px;
+
 
 }
 
 #box1:hover {
-    border-radius: 50px;
-    border: 2px solid #4EC5F7;
+    
+    border: 5px solid #4EC5F7;
     transition: 5s;
 }
 
